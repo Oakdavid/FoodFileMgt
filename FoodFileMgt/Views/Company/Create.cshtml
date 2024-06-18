@@ -1,0 +1,101 @@
+﻿@using FoodFileMgt.Models.Enums
+@model FoodFileMgt.ViewModels.CreateCompanyViewModel
+@{
+}
+
+<h5>Register Company</h5>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <h6>Address</h6>
+    <div>
+        <label>Number</label>
+        <input type="text" asp-for="Address.Number" />
+    </div>
+    <br />
+    <div>
+        <label>Street</label>
+        <input type="text" asp-for="Address.Street" />
+    </div>
+    <br />
+    <div>
+        <label>City</label>
+        <input type="text" asp-for="Address.City" />
+    </div>
+    <br />
+    <div>
+        <label>State</label>
+        <input type="text" asp-for="Address.State" />
+    </div>
+    <br />
+    <h6>Profile</h6>
+    <div>
+        <label>First Name</label>
+        <input type="text" asp-for="Profile.FirstName" />
+    </div>
+    <br />
+    <div>
+        <label>last Name</label>
+        <input type="text" asp-for="Profile.LastName" />
+    </div>
+    <br />
+    <div>
+        <label>Email</label>
+        <input type="email" asp-for="User.Email" />
+    </div>
+    <br />
+    <div>
+        <label>Password</label>
+        <input type="password" asp-for="User.Password" />
+    </div>
+    <br />
+    <div>
+        <label>Confirm Password</label>
+        <input type="password" asp-for="User.ConfirmPassword" />
+    </div>
+    <br />
+    <div>
+        <label>Phone Number</label>
+        <input type="text" asp-for="Profile.PhoneNumber" />
+    </div>
+    <br />
+    <div>
+        <label>date of birth</label>
+        <input type="date" asp-for="Profile.Dob" />
+    </div>
+    <br />
+    <div>
+        <label>Photo</label>
+        <input type="file" asp-for="Profile.ImageUrl" />
+    </div>
+    <br />
+    <div>
+        <label>Gender</label>
+        <select asp-for="Profile.Gender" asp-items="Html.GetEnumSelectList<Gender>()">
+            <option value="">Select Gender</option>
+        </select>
+    </div>
+
+    <br />
+    <h6>Company</h6>
+    <div>
+        <label>Company Name</label>
+        <input type="text" asp-for="Company.Name" />
+    </div>
+    <br />
+    <div>
+        <label>CAC Number</label>
+        <input type="text" asp-for="Company.CACNumber" />
+    </div>
+    <br />
+    <div>
+        <label>Company Logo</label>
+        <input type="file" asp-for="Company.LogoUrl" />
+    </div>
+    <br />
+
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+    <br />
+</form>
+    

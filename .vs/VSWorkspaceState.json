@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FoodFileMgt",
+    "\\FoodFileMgt\\FoodFileMgt",
+    "\\FoodFileMgt\\FoodFileMgt\\Context",
+    "\\FoodFileMgt\\FoodFileMgt\\Controllers",
+    "\\FoodFileMgt\\FoodFileMgt\\Dtos",
+    "\\FoodFileMgt\\FoodFileMgt\\Models",
+    "\\FoodFileMgt\\FoodFileMgt\\Repositories",
+    "\\FoodFileMgt\\FoodFileMgt\\Services",
+    "\\FoodFileMgt\\FoodFileMgt\\wwwroot"
+  ],
+  "SelectedNode": "\\FoodFileMgt\\FoodFileMgt\\Controllers\\UserController.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,21 @@
+﻿@model FoodFileMgt.Dtos.LoginUserRequestModel
+@{
+}
+
+<h4>Login</h4>
+<form asp-action="Login" method="post">
+    <div>
+        <label>Email</label>
+        <input type="email" name="Email" />
+    </div>
+    <br />
+    <div>
+        <label>Password</label>
+        <input type="password" name="Password" />
+    </div>
+    <br />
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+    
+</form>
