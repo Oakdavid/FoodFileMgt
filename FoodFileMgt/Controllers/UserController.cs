@@ -26,7 +26,7 @@ namespace FoodFileMgt.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginUserRequestModel model)
+        public async Task<IActionResult> Login(LoginUserRequestModel  model)
         {
             var user = await _loginService.Login(model);
             if(!user.Status)
